@@ -23,18 +23,35 @@ app.get('/:number_of_bottles', (req, res)=>{
 
 // was trying to attempt super bonus question
 // app.get('/fibonacci/:number', (req,res)=>{
-//     res.send(`${number}`)
+//     let result = isFibonacci(req.params.number)
+//     let message = ''
+//     if(result){
+//         message = "Very good. It is Fibonacci."
+//     }else{
+//         message = "I can tell this is not a fibonacci number."
+//     }
+//     res.send(message)
 // })
 
-
-// function fib(n){
-//   let arr = [0, 1];
-//   for (let i = 2; i < n + 1; i++){
-//     arr.push(arr[i - 2] + arr[i -1])
-//   }
-//  return arr[n]
+// function isFibonacci(num) {
+//     if (isSquare(5*(num*num)-4) && isSquare(5*(num*num)+4)) {
+//        return true;
+//     } else { return false; }
 // }
-
+// function isFibonacci(num, a = 0, b = 1) {
+//     if(num === 0 || num === 1) {
+//       return true;
+//     }
+//     let nextNumber = a+b;
+//     if(nextNumber === num) {
+//       return true ;
+//     }
+//     else if(nextNumber > num) {
+//       return false;
+//     }
+//    return isFibonacci(num, b, nextNumber);
+//   }
+  
 
 
 
